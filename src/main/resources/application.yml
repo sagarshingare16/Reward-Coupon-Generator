@@ -1,15 +1,16 @@
 spring:
   application:
     name: coupon-generator-app
-#server-config
-server:
-  port: 8181
 #postgres-db-connection
   datasource:
-    url = jdbc:postgresql://localhost:5432/coupon-generator-db
-    username = postgres
-    password = root
-    driver-class-name = org.postgresql.Driver
+    url : jdbc:postgresql://localhost:5432/coupon-generator-db
+    username : postgres
+    password : root
+    driver-class-name : org.postgresql.Driver
   jpa:
   hibernate:
     ddl-auto= update
+
+#server-config
+server:
+  port: 8181
